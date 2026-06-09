@@ -255,7 +255,7 @@ header {
 /* ABOUT SECTION */
 .about-section {
     padding: 120px 8%;
-    background-color: #FFFFFF;
+    background-color: #F7F4EF;
 }
 
 .about-container {
@@ -318,8 +318,8 @@ header {
 }
 
 .stat-card {
-    background-color: #FDFDFD;
-    border: 1px solid #1a1a1a;
+    background-color: #FFFFFF;
+    border: 1px solid #CE1124;
     border-radius: 12px;
     padding: 40px 30px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
@@ -353,7 +353,7 @@ header {
 .stat-card:hover {
     transform: translateY(-5px);
     background-color: #FFFFFF;
-    border-color: #CE1124;
+    border-color: #1a1a1a;
     box-shadow: 0 15px 30px rgba(206, 17, 36, 0.08);
 }
 
@@ -500,8 +500,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid #CE1124;
-    border-bottom: 1px solid #CE1124;
 }
 
 .quote-container {
