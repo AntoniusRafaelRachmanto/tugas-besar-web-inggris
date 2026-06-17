@@ -1,0 +1,174 @@
+header.landmarks-hero {
+    background: linear-gradient(rgba(26, 26, 26, 0.75), rgba(26, 26, 26, 0.85)),
+        url('../assets/landmarks_hero.jpg') no-repeat center center/cover;
+    min-height: 75vh;
+}
+
+header.landmarks-hero .main-title {
+    color: #FFFFFF;
+}
+
+header.landmarks-hero .description {
+    color: #CCCCCC;
+}
+
+.text-red {
+    color: #CE1124;
+}
+
+.split-sticky-section {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.split-sticky-section.layout-reverse {
+    flex-direction: row-reverse;
+}
+
+.sticky-panel {
+    position: sticky;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.sticky-bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(1.05) contrast(0.85) opacity(0.12) grayscale(40%);
+    z-index: 1;
+}
+
+.sticky-panel-content {
+    position: relative;
+    z-index: 2;
+    max-width: 440px;
+}
+
+.sticky-panel-content .chap-num {
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.sticky-panel-content h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #1a1a1a;
+    /* Diubah ke gelap */
+    margin: 0 0 20px 0;
+    letter-spacing: -1px;
+}
+
+.sticky-panel-content p {
+    font-size: 1rem;
+    color: #555555;
+    /* Diubah ke gelap */
+    line-height: 1.7;
+    margin: 0;
+}
+
+.scroll-panel {
+    width: 50%;
+    padding: 120px 8%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.scroll-story-card {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.story-img-wrap {
+    height: 280px;
+    overflow: hidden;
+}
+
+.story-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.story-detail {
+    padding: 35px 30px;
+}
+
+.story-meta {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.scroll-story-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 12px 0;
+}
+
+.scroll-story-card p {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: #555555;
+    margin: 0;
+    text-align: justify;
+}
+
+/* Hover Effect Cerita */
+.scroll-story-card:hover {
+    transform: translateY(-6px);
+}
+
+.scroll-story-card:hover .story-img-wrap img {
+    transform: scale(1.03);
+}
+
+.section-urban {
+    background-color: #f0f4f8;
+}
+
+.red-text {
+    color: #CE1124;
+}
+
+.section-ancient {
+    background-color: #f4f2ee;
+}
+
+.gold-text {
+    color: #997d46;
+}
+
+.section-nature {
+    background-color: #ebf0ea;
+}
+
+.green-text {
+    color: #2e4a2b;
+}
