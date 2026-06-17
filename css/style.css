@@ -319,7 +319,7 @@ header {
 
 .stat-card {
     background-color: #FFFFFF;
-    border: 1px solid #CE1124;
+    border: 2px solid #CE1124;
     border-radius: 12px;
     padding: 40px 30px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
@@ -353,7 +353,6 @@ header {
 .stat-card:hover {
     transform: translateY(-5px);
     background-color: #FFFFFF;
-    border-color: #1a1a1a;
     box-shadow: 0 15px 30px rgba(206, 17, 36, 0.08);
 }
 

@@ -1,63 +1,27 @@
 header.culture-hero {
-    display: flex;
-    align-items: center;
+    background: linear-gradient(rgba(26, 26, 26, 0.75), rgba(26, 26, 26, 0.85)),
+        url('../assets/culture_hero.jpg') no-repeat center center/cover;
     min-height: 75vh;
-    padding-top: 140px;
-    padding-right: 8%;
-    padding-bottom: 60px;
-    padding-left: 8%;
-    background-image: linear-gradient(rgba(20, 20, 20, 0.65), rgba(20, 20, 20, 0.75)),
-        url('../assets/culture_hero.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
-
-header.culture-hero .header-text {
-    max-width: 650px;
-}
-
-header.culture-hero .sub-title {
-    color: #CE1124;
-    font-weight: 700;
-    font-size: 0.85rem;
-    letter-spacing: 2px;
-    margin-bottom: 12px;
 }
 
 header.culture-hero .main-title {
     color: #FFFFFF;
-    font-size: 4rem;
-    font-weight: 800;
-    line-height: 1.1;
-    margin-bottom: 20px;
-    letter-spacing: -1px;
 }
 
 header.culture-hero .description {
-    color: #DDDDDD;
-    font-size: 1.05rem;
-    line-height: 1.65;
+    color: #CCCCCC;
 }
 
 .center-text {
     text-align: center;
     max-width: 700px;
-    margin-top: 0px;
-    margin-right: auto;
-    margin-bottom: 60px;
-    margin-left: auto;
+    margin: 0 auto 60px auto;
 }
 
 .culture-classic-section {
-    padding-top: 120px;
-    padding-right: 8%;
-    padding-bottom: 120px;
-    padding-left: 8%;
+    padding: 120px 8%;
     background-color: #F7F4EF;
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: #EAEAEA;
+    border-top: 1px solid #EAEAEA;
 }
 
 .section-intro {
@@ -68,23 +32,20 @@ header.culture-hero .description {
 }
 
 .classic-cards-container {
-    display: flex;
-    gap: 30px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 30px;
 }
 
 .classic-card {
-    flex: 1;
     background-color: #FFFFFF;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #E0E0E0;
+    border: 1px solid #E0E0E0;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.02);
-    transition-property: all;
-    transition-duration: 0.4s;
-    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    flex-direction: column;
 }
 
 .classic-img-wrap {
@@ -97,16 +58,14 @@ header.culture-hero .description {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition-property: transform;
-    transition-duration: 0.5s;
-    transition-timing-function: ease;
+    transition: transform 0.5s ease;
 }
 
 .classic-content {
-    padding-top: 30px;
-    padding-right: 30px;
-    padding-bottom: 30px;
-    padding-left: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .classic-content h3 {
@@ -121,6 +80,7 @@ header.culture-hero .description {
     font-size: 0.92rem;
     color: #666666;
     line-height: 1.65;
+    margin: 0;
 }
 
 .classic-card:hover {
@@ -134,10 +94,7 @@ header.culture-hero .description {
 }
 
 .culture-modern-section {
-    padding-top: 120px;
-    padding-right: 8%;
-    padding-bottom: 120px;
-    padding-left: 8%;
+    padding: 120px 8%;
     background-color: #1A1A1A;
     color: #FFFFFF;
 }
@@ -156,14 +113,6 @@ header.culture-hero .description {
     color: #bfa15f;
 }
 
-.modern-tagline {
-    color: #bfa15f;
-    font-weight: 700;
-    font-size: 0.85rem;
-    letter-spacing: 3px;
-    margin-bottom: 20px;
-}
-
 .modern-intro {
     font-size: 1.05rem;
     color: #BBBBBB;
@@ -174,20 +123,25 @@ header.culture-hero .description {
 .modern-layout-container {
     display: flex;
     gap: 30px;
+    margin-bottom: 40px;
+}
+
+.modern-layout-container:last-of-type {
+    margin-bottom: 0;
+}
+
+.modern-layout-container.layout-reverse {
+    flex-direction: row-reverse;
 }
 
 .modern-block {
     background-color: #222222;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #333333;
+    border: 1px solid #333333;
     border-radius: 14px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    transition-property: all;
-    transition-duration: 0.4s;
-    transition-timing-function: ease;
+    transition: all 0.4s ease;
 }
 
 .subculture-block {
@@ -220,51 +174,40 @@ header.culture-hero .description {
     justify-content: center;
 }
 
-.fashion-bg {
+.fashion-bg,
+.football-bg,
+.pub-bg,
+.cinema-bg {
     flex-direction: row;
 }
 
-.fashion-bg .modern-content {
+.fashion-bg .modern-content,
+.football-bg .modern-content,
+.pub-bg .modern-content,
+.cinema-bg .modern-content {
     width: 60%;
 }
 
-.fashion-bg .modern-img-wrap {
+.fashion-bg .modern-img-wrap,
+.football-bg .modern-img-wrap,
+.pub-bg .modern-img-wrap,
+.cinema-bg .modern-img-wrap {
     width: 40%;
     height: 100%;
     overflow: hidden;
 }
 
-.fashion-bg .modern-img-wrap img {
+.fashion-bg .modern-img-wrap img,
+.football-bg .modern-img-wrap img,
+.pub-bg .modern-img-wrap img,
+.cinema-bg .modern-img-wrap img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.football-bg {
-    flex-direction: row;
-}
-
-.football-bg .modern-img-wrap {
-    width: 40%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.football-bg .modern-img-wrap img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.football-bg .modern-content {
-    width: 60%;
 }
 
 .modern-content {
-    padding-top: 30px;
-    padding-right: 30px;
-    padding-bottom: 30px;
-    padding-left: 30px;
+    padding: 30px;
 }
 
 .card-tag-modern {
@@ -291,5 +234,5 @@ header.culture-hero .description {
 .modern-block:hover {
     border-color: #bfa15f;
     background-color: #282828;
-    transform: scale(1.01);
+    transform: translateY(-4px);
 }
