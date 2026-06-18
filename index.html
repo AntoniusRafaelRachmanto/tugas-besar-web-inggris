@@ -13,11 +13,20 @@
 
 <body>
 
+    <!-- NAVBAR -->
     <nav>
         <div class="nav-logo-wrap">
             <img src="assets/england_flag.png" alt="England Flag" class="nav-flag">
             <h1>ENGLAND</h1>
         </div>
+
+        <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
+        <label for="menu-checkbox" class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+
         <div class="nav-links">
             <a href="index.html" class="active">HOME</a>
             <a href="history.html">HISTORY</a>
@@ -27,6 +36,7 @@
         </div>
     </nav>
 
+    <!-- HERO SECTION -->
     <header>
         <div class="header-text">
             <p class="sub-title">DISCOVER THE</p>
@@ -34,7 +44,7 @@
             <p class="description">From the rolling moors of Yorkshire to the cobblestone lanes of London — explore the
                 timeless heritage, traditions, and soul of England.</p>
 
-            <a href="" class="btn-explore">
+            <a href="#ticker-section" class="btn-explore">
                 EXPLORE ENGLAND
                 <span class="arrow">→</span>
             </a>
@@ -55,7 +65,8 @@
         </div>
     </header>
 
-    <div class="ticker-wrap">
+    <!-- TEKS BERJALAN -->
+    <div class="ticker-wrap" id="ticker-section">
         <div class="ticker">
             <div class="ticker-item">BIG BEN •</div>
             <div class="ticker-item">STONEHENGE •</div>
@@ -76,6 +87,7 @@
         </div>
     </div>
 
+    <!-- ABOUT SECTION -->
     <section class="about-section">
         <div class="about-container">
             <div class="about-left">
@@ -83,8 +95,8 @@
                 <h2 class="about-title">A Nation Woven From <span class="highlight-red">Centuries</span> of Story</h2>
                 <p class="about-desc">England is a country that has shaped the modern world in more ways than any other.
                     Its literature, music, science, and law have left marks on every continent. From the Magna Carta to
-                    the
-                    Industrial Revolution, from Shakespeare to The Rolling Stones — England's cultural output is simply
+                    the Industrial Revolution, from Shakespeare to The Rolling Stones — England's cultural output is
+                    simply
                     unmatched.
                 </p>
                 <p class="about-desc-sub">Yet beneath the global icons lies a nation of incredible local diversity:
@@ -116,15 +128,22 @@
         </div>
     </section>
 
+    <!-- CULTURAL PILLARS -->
     <section class="pillars-section">
         <div class="pillars-container">
             <div class="pillars-header">
-                <p class="pillars-tagline">CULTURAL PILLARS</p>
-                <h2 class="pillars-title">What Makes England, <span class="text-red">England</span></h2>
+                <button class="slide-btn" id="slide-prev" aria-label="Previous">&#10094;</button>
+
+                <div class="pillars-title-group">
+                    <p class="pillars-tagline">CULTURAL PILLARS</p>
+                    <h2 class="pillars-title">What Makes England, <span class="highlight-red">England</span></h2>
+                </div>
+
+                <button class="slide-btn" id="slide-next" aria-label="Next">&#10095;</button>
             </div>
 
-            <div class="pillars-scroll-wrapper">
-                <div class="pillar-card">
+            <div class="pillars-scroll-wrapper" id="pillars-scroll">
+                <a href="history.html" class="pillar-card">
                     <div class="card-img-box">
                         <img src="assets/rich_history.jpg" alt="Rich History">
                     </div>
@@ -133,11 +152,11 @@
                         <h3>Rich History</h3>
                         <p class="card-desc">From ancient Roman walls and royal dynasties to empires, England's past is
                             etched deeply into the modern world.</p>
-                        <a href="" class="card-link">EXPLORE →</a>
+                        <span class="card-link">EXPLORE →</span>
                     </div>
-                </div>
+                </a>
 
-                <div class="pillar-card">
+                <a href="culture.html" class="pillar-card">
                     <div class="card-img-box">
                         <img src="assets/unique_culture.jpg" alt="Unique Culture">
                     </div>
@@ -146,11 +165,11 @@
                         <h3>Unique Culture</h3>
                         <p class="card-desc">The birthplace of Shakespeare, iconic pub traditions, literature, and music
                             movements that influenced generations.</p>
-                        <a href="" class="card-link">EXPLORE →</a>
+                        <span class="card-link">EXPLORE →</span>
                     </div>
-                </div>
+                </a>
 
-                <div class="pillar-card">
+                <a href="cuisine.html" class="pillar-card">
                     <div class="card-img-box">
                         <img src="assets/traditional_cuisine.jpg" alt="Traditional Cuisine">
                     </div>
@@ -159,11 +178,11 @@
                         <h3>Traditional Cuisine</h3>
                         <p class="card-desc">Fish & chips, Sunday roast, and afternoon tea — historical hearty dishes
                             that bring pure comfort and warmth.</p>
-                        <a href="" class="card-link">EXPLORE →</a>
+                        <span class="card-link">EXPLORE →</span>
                     </div>
-                </div>
+                </a>
 
-                <div class="pillar-card">
+                <a href="landmarks.html" class="pillar-card">
                     <div class="card-img-box">
                         <img src="assets/iconic_landmarks.jpg" alt="Iconic Landmarks">
                     </div>
@@ -172,13 +191,64 @@
                         <h3>Iconic Landmarks</h3>
                         <p class="card-desc">From the majestic Big Ben to the ancient mystery of Stonehenge, explore
                             structural marvels standing through time.</p>
-                        <a href="" class="card-link">EXPLORE →</a>
+                        <span class="card-link">EXPLORE →</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FUN FACTSS SECTION -->
+    <section class="facts-section">
+        <div class="facts-container">
+            <div class="facts-header">
+                <p class="facts-tagline">// DID YOU KNOW?</p>
+                <h2 class="facts-title">Untold <span class="highlight-red">Fun Facts</span></h2>
+            </div>
+
+            <div class="facts-list">
+                <div class="facts-item">
+                    <button class="facts-question">
+                        <span>Did you know that "Big Ben" is actually not the name of the clock tower? 🕰️</span>
+                        <span class="facts-icon">+</span>
+                    </button>
+                    <div class="facts-answer">
+                        <p>Many people mistakenly believe that the iconic clock tower in London is named Big Ben. In
+                            fact, its official name is the <strong>Elizabeth Tower</strong>. The name <strong>"Big
+                                Ben"</strong> is actually the nickname for the <strong>giant 13.7-ton bell</strong>
+                            housed deep inside the tower!</p>
+                    </div>
+                </div>
+
+                <div class="facts-item">
+                    <button class="facts-question">
+                        <span>How much tea do British people drink every single day? ☕</span>
+                        <span class="facts-icon">+</span>
+                    </button>
+                    <div class="facts-answer">
+                        <p>The British are absolutely obsessed with tea! Collectively, they drink about <strong>100 to
+                                165 million cups of tea every single day</strong>. If you gathered all those cups over a
+                            year, it would be enough to fill roughly 20 Olympic-sized swimming pools.</p>
+                    </div>
+                </div>
+
+                <div class="facts-item">
+                    <button class="facts-question">
+                        <span>Why does the British Monarchy keep ravens at the Tower of London? 🦅</span>
+                        <span class="facts-icon">+</span>
+                    </button>
+                    <div class="facts-answer">
+                        <p>There is an ancient superstition dating back to the reign of King Charles II stating that at
+                            least <strong>6 ravens</strong> must reside at the Tower of London at all times. Legend has
+                            it that if these birds ever leave the tower, the British Kingdom will fall. To this day, the
+                            monarchy still employs a dedicated <em>Ravenmaster</em> to care for them.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- QUOTE SECTION -->
     <section class="quote-section">
         <div class="quote-container">
             <p class="quote-text">"This royal throne of kings, this sceptred isle... This blessed plot, this earth, this
@@ -186,6 +256,46 @@
             <p class="quote-author">— WILLIAM SHAKESPEARE, <span class="quote-source">RICHARD II</span></p>
         </div>
     </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-column brand-col">
+                <div class="footer-logo-wrap">
+                    <img src="assets/england_flag.png" alt="England Flag" class="footer-flag">
+                    <h2>ENGLAND</h2>
+                </div>
+                <p class="brand-desc">Exploring the timeless heritage, rich traditions, and majestic landmarks of the
+                    Kingdom of England.</p>
+            </div>
+
+            <div class="footer-column links-col">
+                <h3>EXPLORE PAGES</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="culture.html">Culture</a></li>
+                    <li><a href="cuisine.html">Cuisine</a></li>
+                    <li><a href="landmarks.html">Landmarks</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column contact-col">
+                <h3>CONTACT</h3>
+                <ul class="contact-info">
+                    <li>📍 Bandung, Indonesia</li>
+                    <li>📞 +62 1234 5678</li>
+                    <li>✉️ abraham@email.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Kelompok England. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 

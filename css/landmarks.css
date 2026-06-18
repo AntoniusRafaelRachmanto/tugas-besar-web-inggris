@@ -70,7 +70,6 @@ header.landmarks-hero .description {
     font-weight: 800;
     line-height: 1.1;
     color: #1a1a1a;
-    /* Diubah ke gelap */
     margin: 0 0 20px 0;
     letter-spacing: -1px;
 }
@@ -78,7 +77,6 @@ header.landmarks-hero .description {
 .sticky-panel-content p {
     font-size: 1rem;
     color: #555555;
-    /* Diubah ke gelap */
     line-height: 1.7;
     margin: 0;
 }
@@ -140,7 +138,6 @@ header.landmarks-hero .description {
     text-align: justify;
 }
 
-/* Hover Effect Cerita */
 .scroll-story-card:hover {
     transform: translateY(-6px);
 }
@@ -171,4 +168,86 @@ header.landmarks-hero .description {
 
 .green-text {
     color: #2e4a2b;
+}
+
+@media (max-width: 1024px) {
+    header.landmarks-hero {
+        min-height: 60vh;
+        padding: 60px 5%;
+    }
+
+    .split-sticky-section,
+    .split-sticky-section.layout-reverse {
+        flex-direction: column !important;
+    }
+
+    .sticky-panel {
+        position: relative !important;
+        top: initial;
+        width: 100%;
+        height: auto;
+        padding: 60px 8%;
+        text-align: center;
+    }
+
+    .sticky-panel-content {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .sticky-panel-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .scroll-panel {
+        width: 100%;
+        padding: 40px 8% 80px 8%;
+        gap: 60px;
+    }
+
+    .story-img-wrap {
+        height: 240px;
+    }
+}
+
+@media (max-width: 768px) {
+    header.landmarks-hero {
+        min-height: 50vh;
+        display: flex;
+        align-items: center;
+    }
+
+    header.landmarks-hero .main-title {
+        font-size: 2.2rem;
+    }
+
+    .sticky-panel {
+        padding: 40px 20px;
+    }
+
+    .sticky-panel-content h2 {
+        font-size: 1.8rem;
+        margin-bottom: 12px;
+    }
+
+    .scroll-panel {
+        padding: 20px 20px 60px 20px;
+        gap: 40px;
+    }
+
+    .story-img-wrap {
+        height: 180px;
+    }
+
+    .story-detail {
+        padding: 25px 20px;
+    }
+
+    .scroll-story-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .scroll-story-card p {
+        text-align: left;
+    }
 }

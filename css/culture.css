@@ -236,3 +236,150 @@ header.culture-hero .description {
     background-color: #282828;
     transform: translateY(-4px);
 }
+
+@media (max-width: 1024px) {
+    header.culture-hero {
+        padding: 140px 5% 60px 5%;
+        min-height: 60vh;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    header.culture-hero .header-text {
+        max-width: 100%;
+    }
+
+    header.culture-hero .main-title {
+        font-size: 3.5rem;
+    }
+
+    .culture-classic-section {
+        padding: 80px 5%;
+    }
+
+    .classic-cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .culture-modern-section {
+        padding: 80px 5%;
+    }
+
+    .modern-title {
+        font-size: 2.8rem;
+    }
+
+    .modern-layout-container,
+    .modern-layout-container.layout-reverse {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .subculture-block {
+        width: 100%;
+    }
+
+    .modern-right-column {
+        width: 100%;
+        gap: 30px;
+    }
+
+    .fashion-bg,
+    .football-bg,
+    .pub-bg,
+    .cinema-bg {
+        flex-direction: row;
+        min-height: 200px;
+    }
+
+    .fashion-bg .modern-content,
+    .football-bg .modern-content,
+    .pub-bg .modern-content,
+    .cinema-bg .modern-content {
+        width: 65%;
+    }
+
+    .fashion-bg .modern-img-wrap,
+    .football-bg .modern-img-wrap,
+    .pub-bg .modern-img-wrap,
+    .cinema-bg .modern-img-wrap {
+        width: 35%;
+    }
+}
+
+@media (max-width: 768px) {
+    header.culture-hero {
+        padding-top: 120px;
+    }
+
+    header.culture-hero .main-title {
+        font-size: 2.5rem;
+    }
+
+    header.culture-hero .description {
+        font-size: 1rem;
+    }
+
+    .culture-classic-section {
+        padding: 60px 4%;
+    }
+
+    .center-text {
+        margin-bottom: 40px;
+    }
+
+    .classic-cards-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .classic-img-wrap {
+        height: 200px;
+    }
+
+    .classic-content {
+        padding: 20px;
+    }
+
+    .culture-modern-section {
+        padding: 60px 4%;
+    }
+
+    .modern-title {
+        font-size: 2.2rem;
+    }
+
+    .subculture-block .modern-img-wrap {
+        height: 220px;
+    }
+
+    .fashion-bg,
+    .football-bg,
+    .pub-bg,
+    .cinema-bg {
+        flex-direction: column;
+    }
+
+    .fashion-bg,
+    .pub-bg {
+        flex-direction: column-reverse;
+    }
+
+    .fashion-bg .modern-content,
+    .football-bg .modern-content,
+    .pub-bg .modern-content,
+    .cinema-bg .modern-content {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .fashion-bg .modern-img-wrap,
+    .football-bg .modern-img-wrap,
+    .pub-bg .modern-img-wrap,
+    .cinema-bg .modern-img-wrap {
+        width: 100%;
+        height: 180px;
+    }
+}
