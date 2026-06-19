@@ -38,9 +38,16 @@ nav {
     gap: 12px;
 }
 
+.nav-logo-wrap a{
+    text-decoration: none;
+    display: flex;
+    gap: 12px;
+    color: #FFFFFF;
+}
+
 .nav-flag {
     width: 28px;
-    height: auto;
+    height: 18px;
     border-radius: 2px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
@@ -200,7 +207,7 @@ header {
 
 .img-middle {
     width: 280px;
-    height: 320px;
+    height: 310px;
     bottom: 30px;
     right: 260px;
     z-index: 2;
